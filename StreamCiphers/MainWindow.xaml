@@ -1,0 +1,59 @@
+﻿<Window x:Class="StreamCiphers.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StreamCiphers"
+        mc:Ignorable="d"
+        Title="Поточное шифрование и дешифрование" Width="719.48" SizeToContent="Height" Loaded="Window_Loaded" Height="235.827">
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Margin="3" Content="Гамма"></Label>
+        <Label Margin="3" Grid.Row="1" Content="Текст"></Label>
+        <Label Margin="3" Grid.Row="2" Content="Вывод"></Label>
+        <Label Margin="3" Grid.Row="3" Content="Файл"></Label>
+        <TextBox Margin="3" Padding="3" Grid.Column="1" Name="seedTB"></TextBox>
+        <TextBox Margin="3" Padding="3" Grid.Column="1" Grid.Row="1" Name="polynomialTB"></TextBox>
+        <TextBox Margin="3" Padding="3" Grid.Column="1" Grid.Row="2" Name="outputTB"></TextBox>
+        <Grid Grid.Column="1" Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBox Margin="3" Padding="3" Name="fileTB"></TextBox>
+            <Button Margin="3" Padding="10 3" Name="openFileBTN" Grid.Column="1" Click="openFileBTN_Click">Открыть</Button>
+        </Grid>
+
+        <StackPanel Margin="5" Grid.Row="4" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <GroupBox Header="Алгоритм">
+                <StackPanel Orientation="Horizontal">
+                    <RadioButton Margin="5" Padding="3" Name="ex1" GroupName="exercise" Checked="generator_checked">LFSR</RadioButton>
+                    <RadioButton Margin="5" Padding="3" Name="ex2" GroupName="exercise" Checked="encryption_checked">Sync</RadioButton>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Способ" Name="wayGB">
+                <StackPanel Orientation="Horizontal">
+                    <RadioButton Margin="5" Padding="3" Name="text" GroupName="way" Checked="way_checked">text</RadioButton>
+                    <RadioButton Margin="5" Padding="3" Name="file" GroupName="way" Checked="way_checked">file</RadioButton>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Режим" Name="modeGB">
+                <StackPanel Orientation="Horizontal">
+                    <RadioButton Margin="5" Padding="3" Name="encrypt" GroupName="mode">Зашифровать</RadioButton>
+                    <RadioButton Margin="5" Padding="3" Name="decrypt" GroupName="mode">Расшифровать</RadioButton>
+                </StackPanel>
+            </GroupBox>
+            <Button Margin="5,15,5,15.4" Padding="15 3" x:Name="runButton" Content="Запуск" Click="runButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

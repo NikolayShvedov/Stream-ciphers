@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1705
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamCiphers", "StreamCiphers\StreamCiphers.csproj", "{5A0EB418-DFD5-44F7-9091-497D3A84FB2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamCiphers_Logic", "StreamCiphers_Logic\StreamCiphers_Logic.csproj", "{66A5BCB9-C2E9-43F4-ABE3-01DFFFD97F05}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A0EB418-DFD5-44F7-9091-497D3A84FB2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A0EB418-DFD5-44F7-9091-497D3A84FB2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A0EB418-DFD5-44F7-9091-497D3A84FB2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A0EB418-DFD5-44F7-9091-497D3A84FB2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66A5BCB9-C2E9-43F4-ABE3-01DFFFD97F05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66A5BCB9-C2E9-43F4-ABE3-01DFFFD97F05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66A5BCB9-C2E9-43F4-ABE3-01DFFFD97F05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66A5BCB9-C2E9-43F4-ABE3-01DFFFD97F05}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D390E0F-143D-482C-9748-7BAB01D9BD83}
+	EndGlobalSection
+EndGlobal
